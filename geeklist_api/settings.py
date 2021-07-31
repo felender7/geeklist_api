@@ -120,7 +120,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, "static")
 STATIC_URL = '/static/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
-MEDIA__URL = 'https://icedrive.net/1/05umfBtS3a'
+MEDIA__URL = 'icedrive.net/1/05umfBtS3a'
 
 import django_on_heroku
 
