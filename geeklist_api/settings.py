@@ -124,5 +124,5 @@ MEDIA__URL = 'icedrive.net/1/05umfBtS3a'
 
 import django_on_heroku
 
-# Activate Django-Heroku.
+
 django_on_heroku.settings(locals())
