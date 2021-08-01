@@ -12,7 +12,7 @@ router = routers.DefaultRouter()
 # Additionally, we include login URLs for the browsable API.
 urlpatterns = [
     url(r'^api/api$', views.geek_list),
-    #url(r'^api/api/(?P<pk>[0-9]+)$', views.geek_list_detail),
+    url(r'^api/api/(?P<pk>[0-9]+)$', views.geek_list_details),
 
 ]
 

@@ -11,7 +11,7 @@ from rest_framework.decorators import api_view
 # Create your views here.
 
 # ViewSets define the view behavior.
-#class GeeksViewSet(viewsets.ModelViewSet):
+# class GeeksViewSet(viewsets.ModelViewSet):
 
 @api_view(['GET', 'POST', 'DELETE'])
 def geek_list(request):
@@ -41,7 +41,7 @@ def geek_list(request):
 
 
 @api_view(['GET', 'PUT', 'DELETE'])
-def tutorial_detail(request, pk):
+def geek_list_details(request, pk):
     try:
         geek = Geeks.objects.get(pk=pk)
     except Geeks.DoesNotExist:
