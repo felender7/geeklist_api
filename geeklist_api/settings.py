@@ -56,7 +56,7 @@ MIDDLEWARE = [
 CORS_ORIGIN_ALLOW_ALL = False
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:8081',
-    'https://geeklist.herokuapp.com/'
+    'https://geeklist.herokuapp.com',
 )
 
 ROOT_URLCONF = 'geeklist_api.urls'
