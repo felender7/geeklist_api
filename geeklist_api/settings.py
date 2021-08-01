@@ -119,8 +119,20 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
 STATIC_URL = '/static/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, "media")
-MEDIA__URL = 'icedrive.net/1/05umfBtS3a'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+AWS_ACCESS_KEY_ID = 'AKIA57VU2QI2D6Q2C6YM'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'geelistphotos'
+AWS_S3_SIGNATURE_VERSION = 's3v4'
+AWS_S3_REGION_NAME = 'us-east-1'
+AWS_S3_FILE_OVERWRITE = False
+AWS_DEFAULT_ACL = None
+AWS_S3_VERIFY = True
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+
 
 import django_on_heroku
 
